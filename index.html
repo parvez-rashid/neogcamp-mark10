@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cash Register</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Cash Register Manager</h1>
+        <p class="description">
+            Enter the bill amount and cash given by customer, and know the minimum number of notes to return.
+        </p>
+        <label for="bill-amount" class="input-label">Bill amount: </label>
+        <input type="text" id="bill-amount">
+        
+        <label for="cash-given" class="input-label">Cash given: </label>
+        <input type="text" id="cash-given">
+        <button id="check-button">Check</button>
+        <p id="error-message"></p>
+
+        <table class="change-table">
+            <caption>Return change</caption>
+            <tr>
+                <th>No. of notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+                <th>Denomination</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>200</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">
+        <div class="footer-heading">
+            <h2>parvez rashid</h2>
+            <p>Connect with me below</p>
+        </div>
+        <ul class="footer-list">
+            <li>
+                <a class="link" href="https://github.com/parvez-rashid">GitHub</a>
+            </li>
+            <li>
+                |
+            </li>
+            <li>
+                <a class="link" href="https://www.linkedin.com/in/mohammed-parvez-rashid-198a6b194/">LinkedIn</a>
+            </li>
+        </ul>
+</body>
+<script src="app.js"></script>
+</html>
