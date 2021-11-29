@@ -14,7 +14,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
             calculateChange(returnAmount);
         }
         else {
-            showMessage("Cash given can't be less than the bill amount")
+            showMessage("Cash given can't be less than the bill amount");
         }
     }
     else {
