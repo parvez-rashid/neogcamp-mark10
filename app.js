@@ -8,17 +8,21 @@ const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
     hideMessage();
-    if (billAmount.value > 0) {
-        if (cashGiven.value >= billAmount.value) {
-            const returnAmount = cashGiven.value - billAmount.value;
+    var bill = Number(billAmount.value);
+    var cash = Number(cashGiven.value);
+    if (bill > 0) {
+        if (cash >= bill) {
+            const returnAmount = cash - bill;
             calculateChange(returnAmount);
         }
         else {
             showMessage("Cash given can't be less than the bill amount");
+            calculateChange(0);
         }
     }
     else {
         showMessage("Invalid bill amount");
+        calculateChange(0);
     }
 });
 
